@@ -1,0 +1,205 @@
+// problem 1 -- If condition
+//to verify user's age weather eligible for vote or not ?
+#include <iostream>
+using namespace std;
+
+int main() {
+    int age;
+    cin >> age;
+    // logic
+    if(age >= 18) {
+        // logic
+        cout <<"eligible for vote";
+    }
+    return 0;
+}
+
+
+
+
+// problem 2 -- If condition
+//to verify user's age weather eligible for vote or not ?
+#include <iostream>
+using namespace std;
+
+int main() {
+    int age;
+    cin >> age;
+    // if condition
+    if(age >= 18) {
+        // logic
+        cout <<"eligible for vote";
+    } else {
+        // logic
+        cout <<"Not Eligible For vote";
+    }
+    return 0;
+}
+
+
+
+
+
+
+// problem 3 -- Nested If - else condition
+//to verify user's age weather eligible for vote or not ?
+#include <iostream>
+using namespace std;
+
+int main() {
+    int age;
+    cin >> age;
+    
+    if(age >= 18) {
+        if (age >=100) {
+        cout <<"eligible for vote (but we are super senior citizen";
+    } else {
+        cout <<"Not Eligible For vote";
+    }
+    } else {
+        if (age < 0) {
+            cout << "Enter a valid age number";
+        } else {
+            cout << "Not eligible for vote";
+        }
+    }
+    return 0;
+}
+
+
+
+
+
+// problem 4 -- ternary operator
+// Find the greater number among 2
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+    int max_number;
+    
+    cin >> a >> b;
+    // Ternary operator
+    max_number = (a > b) ? a : b;
+    
+    cout << max_number;
+    return 0;
+}
+
+
+
+
+
+
+
+// problem 5 -- continue statement
+// print 1 to N and avoid those number which are divisible by int32_t
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    
+    for(int i =1; i <= n; i++) {
+        if(i % 3 == 0){
+            continue;
+        }
+        cout<<"/n";
+        return 0;
+    }
+}
+
+
+
+
+
+// problem 6 -- Break statement
+// we have to add numbers until we get a negative numbers
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int n;
+    int sum = 0;
+    
+    while(true) {
+        cin >> n;
+   
+      if(n < 0){   
+        break;
+    }
+    sum = sum + n;
+  }
+ 
+ cout << sum;
+ return 0;
+ }
+
+
+
+
+
+
+// problem 7 -- Break statement
+// we have to add numbers until we get a negative numbers
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int n;
+    int sum = 0;
+    
+    while(true) {
+        cin >> n;
+   
+      if(n < 0){   
+        break;
+    }
+    sum = sum + n;
+  }
+ 
+ cout << sum;
+ return 0;
+ }
+
+
+
+
+
+// problem 8 -- Customer support IVR system
+// 1-- for support 
+// 2 -- for billing
+// 3 -- TEchnical issues
+//4 -- Talk to the Agent
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int choice;
+    
+    switch(choice) {
+        case 1: 
+        cout <<" Trasferring call to the customer support...";
+        
+        case 2:
+        cout <<" trasferring call to billing and accounts...";
+         
+         case 3:
+         cout <<" connecting to technical help desk...";
+         
+         case 4:
+         cout <<"connecting call to the agent...";
+         
+         default:
+         cout << "Invalid selecion, Enter a valid number...";
+    }
+    return 0;
+    
+    }
